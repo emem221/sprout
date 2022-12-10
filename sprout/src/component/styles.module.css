@@ -1,0 +1,41 @@
+.image{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80');
+  background-size: cover;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(8, 0, 14, 0.63);
+  }
+
+  .bgText{
+  position: relative; 
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: interstate,sans-serif;
+  font-weight: 700;
+  font-style: normal
+}
+
+.introduction{
+  position: relative; 
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-family: interstate,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
