@@ -31,6 +31,9 @@ function Home() {
                   marginTop: "40px",
                   backgroundColor: "#406343",
                   textTransform: "capitalize",
+                  "&:hover": {
+                    background: "#ECE7B4",
+                  },
                 }}
                 variant="contained"
                 disableElevation

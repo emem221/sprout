@@ -39,3 +39,27 @@
   font-style: normal;
   
 }
+
+ .h1Text{
+  color: #32502E;
+  font-size: 3rem;
+  font-family: interstate,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.pText{
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.5rem;
+  font-family: interstate,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.15;
+}
+
