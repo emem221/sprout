@@ -5,6 +5,8 @@ import styles from "./styles.module.css";
 import { InputBase, Paper } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
+import SearchData from "./SearchData";
 
 function Search() {
   return (
@@ -56,9 +58,17 @@ function Search() {
                 sx={{ p: "10px", color: "white" }}
                 aria-label="search"
               >
-                <SearchIcon />
+                <SearchIcon>
+                  <Link
+                    style={{ textDecoration: "none", color: "#ffffff" }}
+                    to="/result"
+                  ></Link>
+                </SearchIcon>
               </IconButton>
             </Paper>
+            <Grid>
+              <SearchData />
+            </Grid>
           </Grid>
         </Grid>
       </Box>

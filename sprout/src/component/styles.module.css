@@ -1,49 +1,48 @@
-.image{
+.image {
   position: relative;
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80');
+  background-image: url("https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80");
   background-size: cover;
 }
 
 .image::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(8, 0, 14, 0.63);
-  }
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(8, 0, 14, 0.63);
+}
 
-  .bgText{
-  position: relative; 
+.bgText {
+  position: relative;
   color: white;
   font-size: 4rem;
   text-align: center;
-  font-family: interstate,sans-serif;
+  font-family: interstate, sans-serif;
   font-weight: 700;
-  font-style: normal
+  font-style: normal;
 }
 
-.introduction{
-  position: relative; 
+.introduction {
+  position: relative;
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #FFFFFF;
-  font-family: interstate,sans-serif;
+  color: #ffffff;
+  font-family: interstate, sans-serif;
   font-weight: 400;
   font-style: normal;
-  
 }
 
- .h1Text{
-  color: #32502E;
+.h1Text {
+  color: #32502e;
   font-size: 3rem;
-  font-family: interstate,sans-serif;
+  font-family: interstate, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-align: center;
@@ -51,15 +50,46 @@
   padding-bottom: 30px;
 }
 
-.pText{
+.pText {
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 1.5rem;
-  font-family: interstate,sans-serif;
+  font-family: interstate, sans-serif;
   font-weight: 300;
   font-style: normal;
   text-align: center;
   line-height: 1.15;
 }
 
+/* for searchData*/
+.container {
+  padding: 50px 30px;
+  width: 99%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  padding: 15px 30px;
+  width: 24%;
+  align-items: center;
+}
+
+.container .card_item img {
+  height: 250px;
+  width: 250px;
+  object-position: center;
+  transition: transform 0.2s;
+}
+
+.paper {
+  width: 70%;
+  padding: 15px 30px;
+  align-items: center;
+  object-position: center;
+}
