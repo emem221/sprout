@@ -1,5 +1,11 @@
-import { Box, Grid, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 import React, { useState, useEffect } from "react";
+import CardMedia from "@mui/material/CardMedia";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import CardActions from "@mui/material/CardActions";
 import styles from "./styles.module.css";
 
 function SearchData() {
@@ -25,41 +31,38 @@ function SearchData() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={1} className={styles.container}>
-          {plantData.map((data) => {
-            return (
-              <Grid
-                item
-                xs={6}
-                md={4}
-                key={data.id}
-                className={styles.card_item}
-              >
-                <Paper
-                  variant="outlined"
-                  elevation={3}
-                  className={styles.paper}
-                >
-                  <img src={data.img} alt="" />
-                  <div>
-                    <b>Plant Category: </b>
-                    {data.Categories}
-                  </div>
-                  <div>
-                    <b>Plant Care: </b>
-                    {data.Watering}
-                  </div>
-                  <div>
-                    <b>Pruning: </b>
-                    {data.Pruning}
-                  </div>
-                </Paper>
-              </Grid>
-            );
-          })}
-        </Grid>
-      </Box>
+      <Grid container spacing={1} className={styles.container}>
+        {plantData.map((data) => {
+          return (
+            <Card
+              sx={{ maxWidth: 345 }}
+              key={data.id}
+              className={styles.card_item}
+            >
+              <CardMedia sx={{ height: 200 }} image={data.img} alt="" />
+              <CardContent>
+                <Typography>
+                  <b>Plant Category: </b>
+                  {data.Categories}
+                </Typography>
+
+                <Typography>
+                  <b>Plant Care: </b>
+                  {data.Watering}
+                </Typography>
+                <Typography>
+                  <b>Pruning: </b>
+                  {data.Pruning}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          );
+        })}
+      </Grid>
     </>
   );
 }
